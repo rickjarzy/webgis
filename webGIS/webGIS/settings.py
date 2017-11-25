@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'supermarkt',
 ]
 
 MIDDLEWARE = [
@@ -76,24 +75,8 @@ WSGI_APPLICATION = 'webGIS.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'webgis',
-        'USER': 'webgisuser',
-        'PASSWORD': 'webgis2017!',
-        'HOST': 'localhost',
-        'HAS_HSTORE': True,
-
-        # 'NAME': 'webgis',
-        # 'USER': 'webgisuser',
-        # 'PASSWORD': 'webgis2017!',
-        # 'HOST': '192.168.1.9',
-        # 'HAS_HSTORE': True,
-
-=======
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
->>>>>>> 3a720e459bff5257ee25ff3e43982867d43e7135
     }
 }
 
