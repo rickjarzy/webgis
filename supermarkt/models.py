@@ -13,6 +13,7 @@ class Produkt(models.Model):
     company = models.ForeignKey('Company', null=True, blank=True)
     price = models.CharField(max_length=200, null=True, blank=True)
     type = models.ForeignKey('ProduktType', null=True, blank=True)
+    
 
 
 class Company(models.Model):
@@ -21,7 +22,8 @@ class Company(models.Model):
         verbose_name_plural = "Companies"
 
     name = models.CharField(max_length=200, null=True, blank=True)
-
+    position_x = models.CharField(max_length=200, null=True, blank=True)
+    position_y = models.CharField(max_length=200, null=True, blank=True)
 
 class ProduktType(models.Model):
     class Meta:
@@ -29,3 +31,4 @@ class ProduktType(models.Model):
         verbose_name_plural = "Produkttypen"
 
     name = models.CharField(max_length=200, null=True, blank=True)
+
