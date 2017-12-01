@@ -1,13 +1,13 @@
 ﻿.idea
 webGIS/settings.py
 *__pycache__/
+/migrations/
 *.secret
 *.sqlite
 *.sqlite3
 *.pyc
 *.project
 *.pydevproject
-*~
 .ipynb_checkpoints
 .DS_Store
 .DS_Store?

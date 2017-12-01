@@ -32,5 +32,6 @@ class ProduktType(models.Model):
         verbose_name_plural = "Produkttypen"
 
     name = models.CharField(max_length=200, null=True, blank=True)
-    tiefkuel = models.CharField(max_length=200, null=True, blank=True)
+    tiefkuehl = models.CharField(max_length=200, null=True, blank=True)
+
 
