@@ -13,6 +13,7 @@ class Produkt(models.Model):
     company = models.ForeignKey('Company', null=True, blank=True)
     price = models.CharField(max_length=200, null=True, blank=True)
     type = models.ForeignKey('ProduktType', null=True, blank=True)
+
     
 
 
@@ -31,4 +32,5 @@ class ProduktType(models.Model):
         verbose_name_plural = "Produkttypen"
 
     name = models.CharField(max_length=200, null=True, blank=True)
+    tiefkuel = models.CharField(max_length=200, null=True, blank=True)
 

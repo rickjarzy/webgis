@@ -1,5 +1,5 @@
 ﻿.idea
-settings.py
+webGIS/settings.py
 *__pycache__/
 *.secret
 *.sqlite
