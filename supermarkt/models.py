@@ -26,6 +26,10 @@ class Company(models.Model):
     position_x = models.CharField(max_length=200, null=True, blank=True)
     position_y = models.CharField(max_length=200, null=True, blank=True)
 
+    def __str__(self):
+        return "%s" % (self.name)
+    
+
 class ProduktType(models.Model):
     class Meta:
         db_table = 'webgis_produkttype'
