@@ -1,6 +1,6 @@
 ﻿.idea
 settings.py
-__pycache__/
+*__pycache__/
 *.secret
 *.sqlite
 *.sqlite3
