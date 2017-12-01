@@ -14,7 +14,8 @@ class Produkt(models.Model):
     price = models.CharField(max_length=200, null=True, blank=True)
     type = models.ForeignKey('ProduktType', null=True, blank=True)
 
-    
+    def __str__(self):
+        return "%s" % (self.name)
 
 
 class Company(models.Model):
@@ -28,7 +29,7 @@ class Company(models.Model):
 
     def __str__(self):
         return "%s" % (self.name)
-    
+
 
 class ProduktType(models.Model):
     class Meta:
@@ -37,5 +38,8 @@ class ProduktType(models.Model):
 
     name = models.CharField(max_length=200, null=True, blank=True)
     tiefkuehl = models.CharField(max_length=200, null=True, blank=True)
+
+    def __str__(self):
+        return "%s" % (self.name)
 
 
