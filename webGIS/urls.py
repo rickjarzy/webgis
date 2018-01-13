@@ -16,11 +16,13 @@ Including another URLconf
 
 from django.conf.urls import url, include
 from django.contrib import admin
+from rest_framework.urlpatterns import format_suffix_patterns
+from supermarkt import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^produkt/', views.ProduktList.as_view()),
     url(r'^supermarkt/', include('supermarkt.urls')),
-
-
-
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
