@@ -1,7 +1,7 @@
+
 from django.db import models
 
 # Create your models here.
-
 
 class Produkt(models.Model):
 
@@ -41,5 +41,3 @@ class ProduktType(models.Model):
 
     def __str__(self):
         return "%s" % (self.name)
-
-
