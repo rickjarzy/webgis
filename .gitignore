@@ -68,3 +68,6 @@ Thumbs.db
 /xalwebapi/
 /cloc.exe
 /testdata/
+ssl-cert-snakeoil.pem
+ssl-cert-snakeoil.key
+ca-certificates.crt

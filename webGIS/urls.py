@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^produkt/', views.ProduktList.as_view()),
     url(r'^supermarkt/', include('supermarkt.urls')),
+    url(r'^produkt_json_core/', views.show_as_JSON),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

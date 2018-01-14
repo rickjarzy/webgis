@@ -6,6 +6,8 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404
 from .models import Produkt
 from .serializer import ProduktSerializer
+
+from django.http import JsonResponse
 # Create your views here.
 
 
@@ -26,6 +28,13 @@ class ProduktList(APIView):
 
     def post(self):
         pass
+
+# Django JSON Response
+
+def show_as_JSON(request):
+    prds = Produkt.objects.all().values()
+    prds_list = list(prds)
+    return JsonResponse(prds_list, safe=False)
 
 
 
